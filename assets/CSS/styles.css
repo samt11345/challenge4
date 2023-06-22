@@ -22,3 +22,11 @@ body {
     align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
 }
+
+.hide {
+    display: none;
+}
+
+#start-container,#question-container,#end-container {
+    max-width: 1000px;
+}
