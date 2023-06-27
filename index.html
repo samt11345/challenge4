@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<title>quiz app</title>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/CSS/styles.css" />
-    <title>quiz app</title>
 </head>
 
 <body>
+    <div id="header-container">
+        <h2>Quiz</h2>
+        <div id="timer-container">
+            <div id="timer">00:00</div>
+        </div>
+
+    </div>
     <div class="container">
         <div id="start-container" class="">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi et corporis suscipit animi ipsum eius
@@ -20,25 +27,23 @@
         </div>
         <div id="question-container" class="hide">
             <div id="question">question</div>
-            <div id="anwser-buttons" class="btn-grid">
+            <div id="answer-buttons" class="btn-grid">
                 <button class="btn">anwser 1</button>
                 <button class="btn">anwser 2</button>
                 <button class="btn">anwser 3</button>
                 <button class="btn">anwser 4</button>
             </div>
 
-            <p><span id="check-anwsers"></span></p>
+            <p><span id="check-answers"></span></p>
 
-            
-        </div>
-        <div id="end-container" class="hide">
-            <label for="initials">initials</label>
-            <input type="text" name="initials" id="initials">
-            <div class="controls">
-                <button id="submit-btn" class="submit-btn btn">submit</button>
+        </div>   
+        <div id="scoreWrapper">
+            <div>
+              <h2 id="scoreTitle">Score LeaderBoard</h2>
+              <div id="end-container"></div>
             </div>
         </div>
-    </div>
+    </div>          
     <script src="./assets/JS/questions.js"></script>
     <script src="./assets/JS/script.js"></script>
 </body>
